@@ -3,15 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rock paper scissors against computer</title>
+    <title>Rock, paper, scissors against the computer</title>
     <link rel="stylescheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body onload="start()">
-    <div id="top"></div>
-    <div id="game"></div>
+    <div id="top">
+      <h1>Rock, paper, scissors against the computer</h1>
+      <p>Press one of the pictures to make your choice, before seeing what the computer chose. The game is over when one of you has 5 points.</p>
+    </div>
+    <div id="game">
+      <div id="playerchoice">
+        <img id="rock"     alt="Clickable picture of rock"      src="./images/rock.png"     />
+        <img id="paper"    alt="Clickable picture of paper"     src="./images/paper.png"    />
+        <img id="scissors" alt="Clickable picture of scissors"  src="./images/scissors.png" />
+      </div>
+    </div>
     <div id="result">
-      <p id="resultp"></p>
+      <p id="points">
+        You:      0 points
+        <br>
+        Computer: 0 points
+      </p>
+      <p id="result_out"></p>
     </div>
   </body>
 </html>
