@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="./script.js"></script>
   </head>
-  <body onload="start()">
+  <body onload="addListeners()">
     <div id="main">
       <div id="top">
         <h1>Rock, paper, scissors against the computer</h1>
@@ -20,8 +20,8 @@
           <img id="scissors" alt="Clickable picture of scissors"  src="./images/scissors.png"/>
         </div>
         <div id="pcchoice">
-          <p>Computer's choice:</p>
-          <img id="pcimg" alt="The computer's choice will be shown here" src="./images/blank.png"/>
+          <p>Computers choice:</p>
+          <img id="pcimg" alt="The computers choice will be shown here" src="./images/blank.png"/>
         </div>
       </div>
       <div id="result">
@@ -29,11 +29,11 @@
           <table>
             <tr>
               <td>You: </td>
-              <td id="playerpoints">0 points</td>
+              <td id="playerPoints">0 points</td>
             </tr>
             <tr>
               <td>Computer: </td>
-              <td id="computerpoints">0 points</td>
+              <td id="computerPoints">0 points</td>
             </tr>
           </table>
         </p>
