@@ -4,28 +4,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rock, paper, scissors against the computer</title>
-    <link rel="stylescheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
   </head>
   <body onload="start()">
-    <div id="top">
-      <h1>Rock, paper, scissors against the computer</h1>
-      <p>Press one of the pictures to make your choice, before seeing what the computer chose. The game is over when one of you has 5 points.</p>
-    </div>
-    <div id="game">
-      <div id="playerchoice">
-        <img id="rock"     alt="Clickable picture of rock"      src="./images/rock.png"     />
-        <img id="paper"    alt="Clickable picture of paper"     src="./images/paper.png"    />
-        <img id="scissors" alt="Clickable picture of scissors"  src="./images/scissors.png" />
+    <div id="main">
+      <div id="top">
+        <h1>Rock, paper, scissors against the computer</h1>
+        <p>Press one of the pictures to make your choice, before seeing what the computer chose. The game is over when one of you has 5 points.</p>
       </div>
-    </div>
-    <div id="result">
-      <p id="points">
-        You:      0 points
-        <br>
-        Computer: 0 points
-      </p>
-      <p id="result_out"></p>
+      <div id="game">
+        <div id="playerchoice">
+          <img id="rock"     alt="Clickable picture of rock"      src="./images/rock.png"/>
+          <img id="paper"    alt="Clickable picture of paper"     src="./images/paper.png"/>
+          <img id="scissors" alt="Clickable picture of scissors"  src="./images/scissors.png"/>
+        </div>
+        <div id="pcchoice">
+          <p>Computer's choice:</p>
+          <img id="pcimg" alt="The computer's choice will be shown here" src="./images/blank.png"/>
+        </div>
+      </div>
+      <div id="result">
+        <p id="points">
+          <table>
+            <tr>
+              <td>You: </td>
+              <td id="playerpoints">0 points</td>
+            </tr>
+            <tr>
+              <td>Computer: </td>
+              <td id="computerpoints">0 points</td>
+            </tr>
+          </table>
+        </p>
+        <p id="result_out">No one has won yet</p>
+      </div>
     </div>
   </body>
 </html>
