@@ -3,7 +3,13 @@ body {
   font-size: 150%;
 }
 #main {
-  padding: 5%;
-  margin: 5%;
-  background-color: white;
+  padding: 10%;
+  margin: 10%;
+  background-color: lightcyan;
 }
+
+#info > h1, #info > p, #playerchoice, #pcchoice, #results {padding: 5%}
+
+#info > h1                          {background-color: lightgrey;}
+#playerchoice, #pcchoice, #info > p {background-color: white;}
+#results                            {background-color: lightyellow;}
