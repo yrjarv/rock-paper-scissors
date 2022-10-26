@@ -82,6 +82,8 @@ function done() {
   paperEl.removeEventListener("click", progress);
   scissorsEl.removeEventListener("click", progress);
 
+  document.querySelector("style").innerText = "#playerchoice > img {cursor: not-allowed}"
+
   //Writes the result
   if      (points["computer"] > points["player"]) {resultEl.innerText = "Oh no! The computer won! Refresh the page to rematch.";        }
   else if (points["player"] > points["computer"]) {resultEl.innerText = "Yay! You won! Refresh the page to see if your luck persists."; }
