@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rock, paper, scissors against the computer</title>
     <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript" src="./script.js"></script>
+    <script src="./script.js"></script>
   </head>
   <body onload="addListeners()">
     <div id="main">
@@ -18,18 +18,20 @@
           <td>Choose here:</td>
           <td>Computers choice:</td>
         </tr>
-        <td id="playerchoiceTD">
-          <div id="playerchoice">
-            <img id="rock"     alt="Clickable picture of rock"      src="./images/rock.png"/>
-            <img id="paper"    alt="Clickable picture of paper"     src="./images/paper.png"/>
-            <img id="scissors" alt="Clickable picture of scissors"  src="./images/scissors.png"/>
-          </div>
-        </td>
-        <td id="pcchoiceTD">
-          <div id="pcchoice">
-            <img id="pcimg" alt="The computers choice will be shown here" src="./images/blank.png"/>
-          </div>
-        </td>
+        <tr>
+          <td id="playerchoiceTD">
+            <div id="playerchoice">
+              <img id="rock"     tabindex=0 alt="Clickable picture of rock"      src="./images/rock.png">
+              <img id="paper"    tabindex=0 alt="Clickable picture of paper"     src="./images/paper.png">
+              <img id="scissors" tabindex=0 alt="Clickable picture of scissors"  src="./images/scissors.png">
+            </div>
+          </td>
+          <td id="pcchoiceTD">
+            <div id="pcchoice">
+              <img id="pcimg" alt="The computers choice will be shown here" src="./images/blank.png">
+            </div>
+          </td>
+        </tr>
       </table>
       <div id="results">
         <table>
@@ -46,6 +48,6 @@
         <button onClick="window.location.reload()">Reload page</button>
       </div>
     </div>
-    <style></style>
   </body>
+  <style></style>
 </html>
