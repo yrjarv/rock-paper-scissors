@@ -14,15 +14,15 @@ let resultEl
 function addListeners() {
   /*
   Creates elements and eventlisteners for the pictures
-  (+ defines the resultEl)
+  (+ defines the resultEl for later use)
   */
   rockEl     = document.getElementById("rock");
   paperEl    = document.getElementById("paper");
   scissorsEl = document.getElementById("scissors");
   computerEl = document.getElementById("pcimg");
 
-  rockEl.addEventListener("click", progress);
-  paperEl.addEventListener("click", progress);
+  rockEl    .addEventListener("click", progress);
+  paperEl   .addEventListener("click", progress);
   scissorsEl.addEventListener("click", progress);
 
   resultEl = document.getElementById("result_out");
@@ -85,7 +85,7 @@ function done() {
   document.querySelector("style").innerText = "#playerchoice > img {cursor: not-allowed}"
 
   //Writes the result
-  if      (points["computer"] > points["player"]) {resultEl.innerText = "Oh no! The computer won! Refresh the page to rematch.";        }
-  else if (points["player"] > points["computer"]) {resultEl.innerText = "Yay! You won! Refresh the page to see if your luck persists."; }
+  if      (points["computer"] > points["player"]) {resultEl.innerText = "Oh no! The computer won! Reload the page to try again.";        }
+  else if (points["player"] > points["computer"]) {resultEl.innerText = "Yay! You won! Reload the page to see if your luck persists."; }
   else                                            {console.error("Even points, this should not be possible"); };
 }

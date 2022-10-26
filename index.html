@@ -13,31 +13,37 @@
         <h1>Rock, paper, scissors against the computer</h1>
         <p>Press one of the pictures to make your choice, before seeing what the computer chose. The game is over when one of you has 5 points.</p>
       </div>
-      <div>
-        <div id="playerchoice">
-          <img id="rock"     alt="Clickable picture of rock"      src="./images/rock.png"/>
-          <img id="paper"    alt="Clickable picture of paper"     src="./images/paper.png"/>
-          <img id="scissors" alt="Clickable picture of scissors"  src="./images/scissors.png"/>
-        </div>
-        <div id="pcchoice">
-          <p>Computers choice:</p>
-          <img id="pcimg" alt="The computers choice will be shown here" src="./images/blank.png"/>
-        </div>
-      </div>
+      <table id="choices">
+        <tr>
+          <td>Choose here:</td>
+          <td>Computers choice:</td>
+        </tr>
+        <td id="playerchoiceTD">
+          <div id="playerchoice">
+            <img id="rock"     alt="Clickable picture of rock"      src="./images/rock.png"/>
+            <img id="paper"    alt="Clickable picture of paper"     src="./images/paper.png"/>
+            <img id="scissors" alt="Clickable picture of scissors"  src="./images/scissors.png"/>
+          </div>
+        </td>
+        <td id="pcchoiceTD">
+          <div id="pcchoice">
+            <img id="pcimg" alt="The computers choice will be shown here" src="./images/blank.png"/>
+          </div>
+        </td>
+      </table>
       <div id="results">
-        <p>
-          <table>
-            <tr>
-              <td>You: </td>
-              <td id="playerPoints">0 points</td>
-            </tr>
-            <tr>
-              <td>Computer: </td>
-              <td id="computerPoints">0 points</td>
-            </tr>
-          </table>
-        </p>
+        <table>
+          <tr>
+            <td>You: </td>
+            <td id="playerPoints">0 points</td>
+          </tr>
+          <tr>
+            <td>Computer: </td>
+            <td id="computerPoints">0 points</td>
+          </tr>
+        </table>
         <p id="result_out">No one has won yet</p>
+        <button onClick="window.location.reload()">Reload page</button>
       </div>
     </div>
     <style></style>

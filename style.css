@@ -3,14 +3,21 @@ body {
   font-size: 150%;
 }
 #main {
-  padding: 10%;
-  margin: 10%;
+  padding: 3%;
+  margin: 0 5%;
+  padding: 2% 3% 0;
   background-color: lightcyan;
 }
+
+#choices        {width: 100%}
+#playerchoiceTD {width: 80%;}
+#pcchoiceTD     {width: 20%;}
+
 #playerchoice > img {cursor: pointer;}
 
-#info > h1, #info > p, #playerchoice, #pcchoice, #results {padding: 5%}
+#choices, #results {padding: 3%}
+#info > *          {padding: 2%}
 
-#info > h1                          {background-color: lightgrey;}
-#playerchoice, #pcchoice, #info > p {background-color: white;}
-#results                            {background-color: lightyellow;}
+#info > h1           {background-color: lightgrey;}
+#choices, #info > p  {background-color: white;}
+#results             {background-color: lightyellow;}
