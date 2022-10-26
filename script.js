@@ -58,12 +58,6 @@ function changeScore(playerChoice, computerChoice) {
 
   document.getElementById("playerPoints"  ).innerText = points["player"];
   document.getElementById("computerPoints").innerText = points["computer"];
-
-  console.log(playerChoice);
-  console.log(options.indexOf(playerChoice));
-  console.log(options.at(options.indexOf(playerChoice)-1))
-  console.log(computerChoice);
-  console.log(points);
   
   if (points["player"] > points["computer"]) {
     resultEl.innerText = "You are in the lead!";
